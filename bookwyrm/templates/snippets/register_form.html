@@ -58,6 +58,22 @@
     </div>
 </div>
 
+<input 
+    class="field"
+    type="text"
+    name="location"
+    maxlength="128"
+    class="input"
+    required=""
+    id="location"
+>
+
+<script>
+    var locfield = document.getElementById("location")
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    locfield.value = timezone
+</script>
+
 <div class="field">
     <div class="control">
         <button class="button is-primary" type="submit">
@@ -65,3 +81,5 @@
         </button>
     </div>
 </div>
+
+
